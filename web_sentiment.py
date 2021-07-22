@@ -20,6 +20,7 @@ query = input("Enter hastag to search:")
 print("_"*40)
 count = 20
 fetched_tweets = api.search(q=query, count=count)
+
 for tweet in fetched_tweets:
 	text = tweet.text
 	text = text.replace("RT", " ")
